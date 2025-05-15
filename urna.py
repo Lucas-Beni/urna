@@ -127,7 +127,7 @@ def cadastra_candidato():
 
     def escolher_foto():
         try:
-            caminho_original = filedialog.askopenfilename(filetypes=[("Imagens", "*.png;*.jpg;*.jpeg")])
+            caminho_original = filedialog.askopenfilename(filetypes=[("Imagens", "*.png;*.jpg;*.jpeg")], parent=janela_cadastro)
             if caminho_original:
                 numero = entrada_numero.get().strip()
                 nome = entrada_nome.get().strip().replace(" ", "_")
